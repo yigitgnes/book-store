@@ -41,6 +41,6 @@ public class BookResourceTest {
                 .pathParams("id", 1).when().get("/api/books/{id}").then().statusCode(200)
                 .body("title", is("Understanding Quarkus"))
                 .body("author", is("Yigit"))
-                .body("genre", is("IT"));
+                .body("genre", is("High-Fantasy"));
     }
 }
